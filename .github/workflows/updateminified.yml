@@ -19,6 +19,8 @@ jobs:
       with:
         python-version: 3.8 
     - name: Update files
+      env:
+        PYTHONPATH: $GITHUB_WORKSPACE
       shell: python
       run: |
         import versiondb
