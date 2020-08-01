@@ -24,7 +24,7 @@ jobs:
       shell: python
       run: |
         import versiondb
-        list = new VersionList()
+        list = VersionList('.')
         list.save_minified('armeabi-v7a')
         list.save_minified('x86')
         list.save_minified('arm64-v8a')
