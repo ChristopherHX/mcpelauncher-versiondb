@@ -32,4 +32,5 @@ jobs:
     - name: Update git
       run: |
         git add .
-        git status
+        git commit -m "Update minified json's"
+        git push
