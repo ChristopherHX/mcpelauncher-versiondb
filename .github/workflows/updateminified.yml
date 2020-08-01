@@ -32,5 +32,7 @@ jobs:
     - name: Update git
       run: |
         git add .
+        git config --global user.email "CI@local"
+        git config --global user.name "CI Bot"
         git commit -m "Update minified json's"
         git push
